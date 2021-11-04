@@ -1,0 +1,25 @@
+@import '../../styles/base.scss';
+
+.hintList {
+  margin-top: $spacingS;
+
+  li.hint {
+    width: 100%;
+    font-size: 90%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+
+    .hintText {
+      margin-left: $spacingXS;
+    }
+
+    &.hintSucceeded {
+      color: $successColor;
+    }
+
+    &.hintFailed {
+      color: $errorColor;
+    }
+  }
+}
